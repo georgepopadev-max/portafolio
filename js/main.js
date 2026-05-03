@@ -177,21 +177,6 @@
   window.addEventListener('scroll', updateActiveNav);
 
   // ========================================
-  // Project Card Hover Enhancement
-  // ========================================
-  const projectCards = document.querySelectorAll('.project-card');
-
-  projectCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-8px)';
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
-
-  // ========================================
   // Navigation Background on Scroll
   // ========================================
   const nav = document.querySelector('.nav');
