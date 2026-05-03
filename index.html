@@ -16,6 +16,7 @@
       <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
       <li><a href="#experiencia" class="nav__link">Experiencia</a></li>
       <li><a href="#tech" class="nav__link">Tech Stack</a></li>
+      <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
       <li><a href="#contacto" class="nav__link">Contacto</a></li>
     </ul>
     <button class="nav__hamburger" aria-label="Abrir menú">
@@ -28,10 +29,10 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu">
     <a href="index.html" class="mobile-menu__link">Inicio</a>
-    <a href="proyectos.html" class="mobile-menu__link">Proyectos</a>
     <a href="#sobre-mi" class="mobile-menu__link">Sobre mí</a>
     <a href="#experiencia" class="mobile-menu__link">Experiencia</a>
     <a href="#tech" class="mobile-menu__link">Tech Stack</a>
+    <a href="#proyectos" class="mobile-menu__link">Proyectos</a>
     <a href="#contacto" class="mobile-menu__link">Contacto</a>
   </div>
 
@@ -49,7 +50,7 @@
         <span>Bilbao, España</span>
       </div>
       <div class="hero__cta">
-        <a href="proyectos.html" class="btn btn--primary">Ver proyectos</a>
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
         <a href="#contacto" class="btn btn--secondary">Contactar</a>
       </div>
     </div>
@@ -222,6 +223,146 @@
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="proyectos" class="section">
+    <div class="section__header reveal">
+      <h2 class="section__title">Proyectos</h2>
+      <p class="section__subtitle">Proyectos seleccionados que demuestran mi experiencia en desarrollo full stack</p>
+    </div>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card reveal reveal-delay-1">
+        <div class="project-card__image">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-2.25 6M17.25 3v6m-3.75 0h7.5" />
+          </svg>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">Energy Anomaly Detector</h3>
+          <p class="project-card__description">
+            Dashboard para detección de anomalías en consumo energético utilizando modelos de Machine Learning. 
+            Implementa algoritmos de detección de patrones abnormales en tiempo real para identificar 
+            ineficiencias y posibles fraudes en instalaciones eléctricas.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">ML</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--secondary btn--icon">Ver demo</a>
+            <a href="https://github.com/georgepopadev-max/energy-anomaly-detector" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--icon">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal reveal-delay-2">
+        <div class="project-card__image">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+          </svg>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">Smart Grid Monitor</h3>
+          <p class="project-card__description">
+            Sistema de monitorización en tiempo real de redes eléctricas inteligentes. Visualizaciones 
+            interactivas de flujos de energía, capacidades de generación renovable y predicciones 
+            de demanda mediante WebSockets para actualizaciones live.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">WebSockets</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--secondary btn--icon">Ver demo</a>
+            <a href="https://github.com/georgepopadev-max/smart-grid-monitor" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--icon">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal reveal-delay-3">
+        <div class="project-card__image">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+          </svg>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">API Doc AI Generator</h3>
+          <p class="project-card__description">
+            Generador automático de documentación para APIs REST utilizando inteligencia artificial. 
+            Analiza endpoints, esquemas de datos y respuestas para generar documentación interactiva 
+            clara y concisa, ahorrando horas de trabajo manual.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">OpenAI</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--secondary btn--icon">Ver demo</a>
+            <a href="https://github.com/georgepopadev-max/api-doc-ai-generator" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--icon">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card reveal reveal-delay-4">
+        <div class="project-card__image">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+          </svg>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">Code Health Checker</h3>
+          <p class="project-card__description">
+            Herramienta de análisis estático para evaluar la calidad y complejidad de repositorios GitHub. 
+            Proporciona métricas de mantenibilidad, detección de code smells, análisis de deuda técnica 
+            e recomendaciones automáticas de mejora.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">GitHub API</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--secondary btn--icon">Ver demo</a>
+            <a href="https://github.com/georgepopadev-max/code-health-checker" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--icon">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card reveal reveal-delay-5">
+        <div class="project-card__image">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.39-.636A1.22 1.22 0 0112 18c4.556 0 9-3.694 9-8.25 0-1.032-.21-2.008-.596-2.905a4.477 4.477 0 00-.596 2.905z" />
+          </svg>
+        </div>
+        <div class="project-card__content">
+          <h3 class="project-card__title">Incident Resolution Assistant</h3>
+          <p class="project-card__description">
+            Asistente RAG (Retrieval Augmented Generation) para resolución de incidencias técnicas en 
+            el sector energético. Utiliza búsqueda vectorial para encontrar soluciones similares 
+            documentadas y genera recomendaciones basadas en el histórico de casos resueltos.
+          </p>
+          <div class="project-card__tech">
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">Vector Search</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="#" class="btn btn--secondary btn--icon">Ver demo</a>
+            <a href="https://github.com/georgepopadev-max/incident-resolution-assistant" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--icon">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contacto" class="section contact">
     <div class="section__header reveal">
@@ -242,7 +383,6 @@
           GitHub
         </a>
         <span class="contact__link contact__link--copy" onclick="copyEmailIndex()">
-          <img src="icons/email.svg" alt="Email" style="width:20px;height:20px;">
           <span>georgepopadev@gmail.com</span>
           <button class="copy-btn" id="copy-btn-index" type="button">📋</button>
         </span>
