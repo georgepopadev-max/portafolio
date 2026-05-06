@@ -206,6 +206,7 @@ img {
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
+  z-index: 1002;
 }
 
 .mobile-menu__link {
