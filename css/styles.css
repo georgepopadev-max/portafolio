@@ -85,7 +85,7 @@ img {
   right: 0;
   z-index: 1000;
   padding: var(--space-md) var(--space-lg);
-  background: rgba(10, 10, 15, 0.95);
+  background: #0a0a0f !important;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
   display: flex;
