@@ -11,6 +11,7 @@
   // ========================================
   const hamburger = document.querySelector('.nav__hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenuClose = document.querySelector('.mobile-menu__close');
   const mobileLinks = document.querySelectorAll('.mobile-menu__link');
 
   function toggleMobileMenu() {
@@ -27,6 +28,10 @@
 
   if (hamburger) {
     hamburger.addEventListener('click', toggleMobileMenu);
+  }
+
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
   }
 
   mobileLinks.forEach(link => {
@@ -185,13 +190,28 @@
 
   function updateNavBg() {
     if (window.scrollY > 50) {
-      nav.style.background = 'rgba(10, 10, 15, 0.95)';
+      nav.classList.add('scrolled');
     } else {
-      nav.style.background = 'rgba(10, 10, 15, 0.85)';
+      nav.classList.remove('scrolled');
     }
   }
 
   window.addEventListener('scroll', updateNavBg);
+
+  // ========================================
+  // Mobile Menu Hint Animation (first visit)
+  // ========================================
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  
+  if (isMobile && !sessionStorage.getItem('mobileHintShown')) {
+    setTimeout(() => {
+      const hamburger = document.querySelector('.nav__hamburger');
+      if (hamburger) {
+        hamburger.style.animation = 'hintPulse 0.6s ease 3';
+      }
+      sessionStorage.setItem('mobileHintShown', 'true');
+    }, 3000);
+  }
 
   // ========================================
   // Page Transition Loader (optional enhancement)
