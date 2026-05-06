@@ -1262,22 +1262,25 @@ img {
   }
 
   .tech-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-sm);
+    padding: 0 var(--space-xs);
   }
 
   .tech-item {
-    padding: var(--space-sm);
+    padding: var(--space-sm) var(--space-xs);
   }
 
   .tech-item__icon {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
 
   .tech-item__name {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-align: center;
+    word-break: break-word;
+    hyphens: auto;
   }
 
   /* Projects - Mobile */
